@@ -1,0 +1,131 @@
+/* Basic styling for the form */
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-order-left,
+.place-order-right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 48%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.multi-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.multi-fields input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.place-order-right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.cart-total-details b {
+    font-size: 18px;
+}
+
+.place-order-right button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-right button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        width: 100%;
+    }
+
+    .multi-fields {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .place-order {
+        padding: 10px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .place-order-right h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    .multi-fields input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .place-order-right button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
